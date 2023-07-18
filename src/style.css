@@ -47,6 +47,14 @@ body {
   margin: 0;
 }
 
+/* manual */
+.manual {
+  width: 50%;
+  min-width: 230px;
+  text-align: center;
+  margin: 20px auto;
+}
+
 /* workspace */
 .workspace {
   margin: auto;

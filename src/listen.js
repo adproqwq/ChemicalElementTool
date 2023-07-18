@@ -4,5 +4,6 @@ document.getElementById("modeselect").addEventListener("change",function(a){
         var index = userselect.selectedIndex;
         if(Number(userselect.options[index].value) == 1) mode1();
         else if(Number(userselect.options[index].value) == 2) mode2();
+        else if(Number(userselect.options[index].value) == 3) mode3();
     };
 });

@@ -14,7 +14,7 @@
                 <select id="modeselect" onchange="mode()">
                     <option value="1">看字写音（前20）</option>
                     <option value="2">看原子序数写字（前20）</option>
-                    <option value="3">（开发中）默写（前20）</option>
+                    <option value="3">看字写音（全表）</option>
                 </select>
             </div>
         </div>
@@ -25,16 +25,23 @@
             </div>
             <div class="que">
                 <div class="row">
-                    <input id="ans" maxlength="5" autofocus="autofocus" autocomplete="off" inputmode="text" oninput="var userselect = document.getElementById('modeselect');var index = userselect.selectedIndex;mode = Number(userselect.options[index].value);jdg(mode)">
+                    <input id="ans" maxlength="5" autofocus="autofocus" autocomplete="off" inputmode="text" oninput="var userselect = document.getElementById('modeselect');var index = userselect.selectedIndex;mode = Number(userselect.options[index].value);jdg(mode);">
                     <div id="btn" class="btn"></div>
                 </div>
             </div>
         </div>
         <script>getMode();</script>
+        <div class="manual">
+            <p>1. 韵母“ü”用“v”代替</p>
+        </div>
         <div class="copyright">
-            <span>@ Adpro | v1.0 2023.7.18</span>
+            <span>@ Adpro | v1.2 2023.7.18</span>
             <br>
-            <span>特别鸣谢：@ BlueSky 及其项目 <a href="https://github.com/BlueSky-07/Shuang">双拼练习</a></span>
+            <span>
+                特别鸣谢：<br>
+                <a href="https://github.com/BlueSky-07">@BlueSky</a> 及其项目 <a href="https://github.com/BlueSky-07/Shuang">双拼练习</a><br>
+                @Yolo-4u 对本项目的支持
+            </span>
         </div>
     </body>
 </html>
