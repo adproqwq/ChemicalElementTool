@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
         <title>化学元素记忆工具</title>
         <link rel="stylesheet" href="./src/style.css">
-        <!--<script src="src/jquery-3.7.0.min.js"></script>-->
     </head>
     <body>
         <script src="src/dict.js"></script>
@@ -14,25 +13,24 @@
                 <label class="title">练习模式：</label>
                 <select id="modeselect" onchange="mode()">
                     <option value="1">看字写音（前20）</option>
-                    <option value="2">（开发中）看原子序数写字（前20）</option>
+                    <option value="2">看原子序数写字（前20）</option>
                     <option value="3">（开发中）默写（前20）</option>
                 </select>
             </div>
         </div>
+        <script src="src/listen.js"></script>
         <div class="workspace">
             <div class="que">
                 <span id="char" class="char"></span>
             </div>
             <div class="que">
                 <div class="row">
-                    <input id="ans" maxlength="5" autofocus="autofocus" autocomplete="off" inputmode="text" oninput="jdg()">
+                    <input id="ans" maxlength="5" autofocus="autofocus" autocomplete="off" inputmode="text" oninput="var userselect = document.getElementById('modeselect');var index = userselect.selectedIndex;mode = Number(userselect.options[index].value);jdg(mode)">
                     <div id="btn" class="btn"></div>
                 </div>
             </div>
         </div>
-        <script>
-            mode1();
-        </script>
+        <script>getMode();</script>
         <div class="copyright">
             <span>@ Adpro | v1.0 2023.7.18</span>
             <br>
