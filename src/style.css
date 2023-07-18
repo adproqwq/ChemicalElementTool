@@ -102,32 +102,30 @@ body {
   width: 100%;
 }
 
-/* wx */
-.wx {
-  min-width: 160px;
-  position: relative;
-  float: right;
-  right: 20px;
-  z-index: 1;
+/* pays */
+.pays {
+  clear: both;
 }
 
-.wx #wx-title {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 14px;
+.pays .pay-title {
+  margin-left: 25px;
+  font-weight: 700;
   color: #777;
 }
 
-.wx #wx-name {
-  font-weight: bold;
-  color: #319A31;
-  margin-left: 0;
+.pays #wxpay {
+  color: #319a31;
 }
 
-.wx #wx-qr {
+.pays .pay-name {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.pays img {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   width: 250px;
   height: 250px;
   border: dashed #777 1px;
