@@ -11,10 +11,12 @@
         <div class="header">
             <div class="menu">
                 <label class="title">练习模式：</label>
-                <select id="modeselect" onchange="mode()">
+                <select id="modeselect">
                     <option value="1">看字写音（前20）</option>
                     <option value="2">看原子序数写字（前20）</option>
                     <option value="3">看字写音（全表）</option>
+                    <option value="4">看字写符号（前20）</option>
+                    <option value="5">看字写符号（全表）</option>
                 </select>
             </div>
         </div>
@@ -33,17 +35,20 @@
         <script>getMode();</script>
         <div class="manual">
             <p>1. 韵母“ü”用“v”代替</p>
+            <p>2. 请切换英文输入法使用</p>
         </div>
         <script src="src/style.js"></script>
         <div class="footer">
             <div class="copyright">
-                <span>@ Adpro | v1.21 2023.7.18</span>
+                <span>@ Adpro | v1.30 2023.7.20</span>
                 <br>
                 <span>
                     特别鸣谢：<br>
                     <a href="https://github.com/BlueSky-07">@BlueSky</a> 及其项目 <a href="https://github.com/BlueSky-07/Shuang">双拼练习</a><br>
                     @Yolo-4u 对本项目的支持
                 </span>
+                <br>
+                <span>BUG反馈：adpro_qwq@qq.com</span>
             </div>
             <div id="pay" class="pays">
                 <span class="pay-title">支持开发者：</span>
