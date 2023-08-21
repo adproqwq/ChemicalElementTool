@@ -37,9 +37,9 @@ function mode5(){
     console.log(element[83],pron[83]);
 };
 function jdg(mode){
+    var answ = document.getElementById("ans").value;
+    var v = document.getElementById("ans");
     if(mode == 1){
-        var answ = document.getElementById("ans").value;
-        var v = document.getElementById("ans");
         newansw = answ.slice(0,1).toUpperCase() + answ.slice(1);
         if(newansw == pron[num]){
             document.getElementById("btn").innerHTML = "✔️";
@@ -49,8 +49,6 @@ function jdg(mode){
         else document.getElementById("btn").innerHTML = "❌";
     }
     else if(mode == 2){
-        var answ = document.getElementById("ans").value;
-        var v = document.getElementById("ans");
         if(answ == element[num]){
             document.getElementById("btn").innerHTML = "✔️";
             v.value = "";
@@ -58,8 +56,6 @@ function jdg(mode){
         }
     }
     else if(mode == 3){
-        var answ = document.getElementById("ans").value;
-        var v = document.getElementById("ans");
         newansw = answ.slice(0,1).toUpperCase() + answ.slice(1);
         if(newansw == pron[num]){
             document.getElementById("btn").innerHTML = "✔️";
@@ -69,8 +65,6 @@ function jdg(mode){
         else document.getElementById("btn").innerHTML = "❌";
     }
     else if(mode == 4){
-        var answ = document.getElementById("ans").value;
-        var v = document.getElementById("ans");
         newansw = answ.slice(0,1).toUpperCase() + answ.slice(1);
         if(newansw == symbol[num]){
             document.getElementById("btn").innerHTML = "✔️";
@@ -80,8 +74,6 @@ function jdg(mode){
         else document.getElementById("btn").innerHTML = "❌";
     }
     else if(mode == 5){
-        var answ = document.getElementById("ans").value;
-        var v = document.getElementById("ans");
         newansw = answ.slice(0,1).toUpperCase() + answ.slice(1);
         if(newansw == symbol[num]){
             document.getElementById("btn").innerHTML = "✔️";
