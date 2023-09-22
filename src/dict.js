@@ -34,7 +34,6 @@ function mode5(){
     num = Math.floor(Math.random()*118);
     document.getElementById("char").innerHTML = element[num];
     document.getElementById("btn").innerHTML = "❌";
-    console.log(element[83],pron[83]);
 };
 function jdg(mode){
     var answ = document.getElementById("ans").value;
