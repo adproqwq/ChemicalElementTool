@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./src/style.css">
     </head>
     <body>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="src/dict.js"></script>
         <div class="header">
             <div class="menu">
@@ -40,7 +41,7 @@
         <script src="src/style.js"></script>
         <div class="footer">
             <div class="copyright">
-                <span>@Adpro | v1.35 2023.8.23</span>
+                <span>@Adpro | v1.36 2023.10.04</span>
                 <br>
                 <span>
                     特别鸣谢：<br>
@@ -52,8 +53,10 @@
             </div>
             <div id="pay" class="pays">
                 <span class="pay-title">支持开发者：</span>
-                <span id="wxpay" class="pay-name" onmouseover="onMouseOver();" onmouseout="onMouseOut();">微信</span>
-                <img id="wxpay-qr" src="/src/wx.jpg" style="display: none;" hidden="hidden">
+                <span id="wxpay" class="pay-name" onmouseover="wx_onMouseOver();" onmouseout="wx_onMouseOut();">微信</span>
+                <span id="alipay" class="pay-name" onmouseover="zfb_onMouseOver();" onmouseout="zfb_onMouseOut();">支付宝</span>
+                <img id="wxpay-qr" src="./src/wx.jpg" style="display: none;" hidden="hidden">
+                <img id="alipay-qr" src="./src/zfb.jpg" style="display: none;" hidden="hidden">
             </div>
         </div>
     </body>

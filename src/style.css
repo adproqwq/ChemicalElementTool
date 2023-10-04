@@ -117,6 +117,10 @@ body {
   color: #319a31;
 }
 
+.pays #alipay {
+  color: #0087ff;
+}
+
 .pays .pay-name {
   font-weight: 700;
   margin-left: 10px;
